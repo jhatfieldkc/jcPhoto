@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>JC Photography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="#"><img class="navbarLogo" src="/images/white-logo.png" alt="Logo"></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/weddings.html">Weddings</a></li>
+                    <li><a href="#">Families</a></li>
+                    <li><a href="https://jc-photo.pixieset.com/" target="_blank">Client Portal</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <!-- Title Image -->
+    <div class="container-fluid mainImg">
+        <div class="col-xs-1">
+            <div class="row main">
+                <div class="row wrapper">
+                    <div class="slidingVertical">
+                        <h2 class="sentence">Capture
+                            <span>Life.</span>
+                            <span>Love.</span>
+                            <span>Family.</span>
+                            <span>Friends.</span>
+                            <span>Memories.</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Photo Section Navigation -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-xl-3 imgCol text-center">
+                <h2 class="imgTitle">Weddings</h2>
+                <a href="/weddings.html"><img class="img-fluid linkImg" src="/images/colorfulWedding.png"
+                        alt="Weddings"></a>
+                <a href="/weddings.html" class="linkFont">Weddings ></a>
+            </div>
+            <div class="col-xl-3 imgCol text-center">
+                <h2 class="imgTitle">Family</h2>
+                <a href="/families.html"><img class="img-fluid linkImg" src="/images/family4.png" alt="Family"></a>
+                <a href="/families.html" class="linkFont">Families ></a>
+            </div>
+            <div class="col-xl-3 imgCol text-center">
+                <h2 class="imgTitle">Kids</h2>
+                <a href="/kids.html"><img class="img-fluid linkImg" src="/images/kid.png" alt="Kids"></a>
+                <a href="/kids.html" class="linkFont">Kids ></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="myscripts.js"></script>
+
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
