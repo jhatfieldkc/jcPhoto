@@ -731,6 +731,7 @@ html, body {
         height: 50vh;
         width: auto;
         padding-top: 50px;
+        border-radius: 20px;
     }
     .nav div.main_list ul {
         flex-direction: column;
@@ -742,6 +743,7 @@ html, body {
         background-color: rgba(0, 0, 0, 0.6);
         /*same background color of navbar*/
         background-position: center top;
+        border-radius: 20px;
     }
     .nav div.main_list ul li {
         width: 100%;
@@ -1385,7 +1387,12 @@ hr.solid {
 
 #TaveContactForm {
     width: 1px;
-    min-width: 50%;
-    background-color: #000;
+    min-width: 100%;
     border: 0;
+}
+
+.contactUs {
+    display: block;
+    margin: auto;
+    text-align: center;
 }
