@@ -13,12 +13,16 @@ html {
 
 body {
     margin: 0;
+    background-color: #fff;
 }
 
 .main {
-    background-image: url(/images/nightsky.jpg);
-    width: 100vw;
     height: 75vh;
+}
+
+.mainWrapper {
+    background-image: url(/images/Abrams_Wedding-205.png);
+    background-size: 100% 100%;
 }
 
 header, section {
@@ -157,9 +161,9 @@ hr {
     filter: brightness(70%) blur(3px)
 }
 
-.logoImage {
+/* .logoImage {
     filter: brightness(170%)
-}
+} */
 
 img {
     vertical-align: middle
@@ -646,7 +650,6 @@ html, body {
     float: left;
     width: auto;
     height: auto;
-    padding-left: 3rem;
 }
 
 .nav div.logo a {
@@ -664,21 +667,7 @@ html, body {
     float: right;
 }
 
-.nav div.main_list2 {
-    height: 65px;
-    float: right;
-}
-
 .nav div.main_list ul {
-    width: 100%;
-    height: 65px;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav div.main_list2 ul {
     width: 100%;
     height: 65px;
     display: flex;
@@ -694,13 +683,6 @@ html, body {
     padding-right: 3rem;
 }
 
-.nav div.main_list2 ul li {
-    width: auto;
-    height: 65px;
-    padding: 0;
-    padding-right: 3rem;
-}
-
 .nav div.main_list ul li a {
     text-decoration: none;
     color: #fff;
@@ -709,19 +691,7 @@ html, body {
     font-weight: 100;
 }
 
-.nav div.main_list2 ul li a {
-    text-decoration: none;
-    color: #000;
-    line-height: 65px;
-    font-size: 13pt;
-    font-weight: 100;
-}
-
 .nav div.main_list ul li a:hover {
-    color: #377dc7;
-}
-
-.nav div.main_list2 ul li a:hover {
     color: #377dc7;
 }
 
@@ -745,13 +715,7 @@ html, body {
 
 /* Media qurey section */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        margin: 0;
-    }
-}
-
-@media screen and (max-width:768px) {
+@media screen {
     .navTrigger {
         display: block;
     }
@@ -764,8 +728,9 @@ html, body {
         overflow: hidden;
     }
     .nav div.show_list {
-        height: auto;
-        display: none;
+        height: 50vh;
+        width: auto;
+        padding-top: 50px;
     }
     .nav div.main_list ul {
         flex-direction: column;
@@ -774,7 +739,7 @@ html, body {
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: #111;
+        background-color: rgba(0, 0, 0, 0.6);
         /*same background color of navbar*/
         background-position: center top;
     }
@@ -809,7 +774,7 @@ html, body {
 }
 
 .navTrigger i {
-    background-color: #fff;
+    background-color: #377dc7;
     border-radius: 2px;
     content: '';
     display: block;
@@ -988,7 +953,6 @@ html, body {
 
 .affix {
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .affix2 {
@@ -1020,11 +984,6 @@ p {
 
 /* Animated Text */
 
-body {
-    background-color: #fff;
-    font-family: 'Raleway', sans-serif;
-}
-
 /*Heading1*/
 
 h1 {
@@ -1036,7 +995,7 @@ h1 {
 /*Sentence*/
 
 .sentence {
-    color: #b9b9b9;
+    color: #fff;
     font-size: 70px;
     text-align: center;
 }
@@ -1057,7 +1016,7 @@ h1 {
 
 .wrapper {
     font-family: 'Raleway', sans-serif;
-    padding: 250px 385px;
+    padding: 475px 10px;
     position: relative;
     width: 70%;
 }
@@ -1065,7 +1024,7 @@ h1 {
 @media (max-width: 965px) {
     .wrapper {
         font-family: 'Raleway', sans-serif;
-        padding: 250px 10px;
+        padding: 500px 10px;
         position: relative;
     }
 }
@@ -1081,7 +1040,7 @@ h1 {
     animation: topToBottom 12.5s linear infinite 0s;
     -ms-animation: topToBottom 12.5s linear infinite 0s;
     -webkit-animation: topToBottom 12.5s linear infinite 0s;
-    color: #fff;
+    color: #377dc7;
     opacity: 0;
     overflow: hidden;
     position: absolute;
@@ -1351,7 +1310,8 @@ hr.solid {
 
 .footer {
     background: #333333;
-    color: #b9b9b9
+    color: #b9b9b9;
+    height: 50px;
 }
 
 /* Footer Social Links */
@@ -1360,7 +1320,7 @@ hr.solid {
 .footer-social-links {
     font-size: 20px;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 3%;
 }
 
 .footer-social-links a {
@@ -1381,8 +1341,7 @@ hr.solid {
 
 .footer-social-links a i, .footer-social-links a span {
     position: relative;
-    top: 2px;
-    left: 1px;
+    top: 8px;
 }
 
 .footer-social-links a:before {
@@ -1407,6 +1366,7 @@ hr.solid {
     -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
     -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
     transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    margin-top: 25%;
 }
 
 .footer-social-links a:hover {
@@ -1419,4 +1379,13 @@ hr.solid {
 
 .about {
     font-size: 15px;
+}
+
+/* Tave Contact Form */
+
+#TaveContactForm {
+    width: 1px;
+    min-width: 50%;
+    background-color: #000;
+    border: 0;
 }
