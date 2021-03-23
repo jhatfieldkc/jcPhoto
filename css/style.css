@@ -19,7 +19,8 @@ body {
 .main {
     height: 75vh;
 }
-/* Main Image */ 
+
+/* Main Image */
 
 .mainWrapper {
     background-image: url(/jcPhoto/images/Abrams_Wedding-205.png);
@@ -35,7 +36,8 @@ header, section {
 }
 
 a {
-    background-color: transparent
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:active, a:hover {
@@ -729,7 +731,7 @@ html, body {
         overflow: hidden;
     }
     .nav div.show_list {
-        height: 50vh;
+        height: 65vh;
         width: auto;
         padding-top: 50px;
         border-radius: 20px;
@@ -753,7 +755,7 @@ html, body {
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
-        font-size: 3rem;
+        font-size: 25px;
         padding: 20px;
     }
     .nav div.media_button {
@@ -1043,7 +1045,7 @@ h1 {
     animation: topToBottom 12.5s linear infinite 0s;
     -ms-animation: topToBottom 12.5s linear infinite 0s;
     -webkit-animation: topToBottom 12.5s linear infinite 0s;
-    color: #377dc7;
+    color: #fff;
     opacity: 0;
     overflow: hidden;
     position: absolute;
@@ -1196,7 +1198,7 @@ h1 {
     margin: 0;
     border-radius: 20px;
     padding: 25px;
-    box-shadow: 0 0 15px 1px #555;
+    /* box-shadow: 0 0 5px 1px #555; */
 }
 
 /* Blockquote right double quotes */
@@ -1262,7 +1264,7 @@ h1 {
     min-width: 100%;
     width: 0;
     border-radius: 10%;
-    box-shadow: 0 0 15px 1px #555;
+    /* box-shadow: 0 0 15px 1px #555; */
 }
 
 .linkFont {
@@ -1284,7 +1286,7 @@ h1 {
     padding-top: 16px!important;
     padding-bottom: 32px!important;
     margin-top: 80px;
-    box-shadow: 0 0 15px 1px #555;
+    /*  box-shadow: 0 0 15px 1px #555; */
 }
 
 .zzCenter {
@@ -1329,7 +1331,7 @@ hr.solid {
 .footer-social-links a {
     width: 30px;
     height: 30px;
-    line-height: 30px !important;
+    line-height: 31px !important;
     position: relative;
     margin: 0 2.75px;
     text-align: center;
@@ -1358,7 +1360,7 @@ hr.solid {
     border: 1px solid #b9b9b9;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    border-radius: 2px;
+    border-radius: 50%;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -1378,6 +1380,7 @@ hr.solid {
 
 .footer-social-links a:hover:before {
     background: #111;
+    border-radius: 50%;
 }
 
 .about {
