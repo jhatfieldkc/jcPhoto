@@ -23,8 +23,8 @@ body {
 /* Main Image */
 
 .mainWrapper {
-    background-image: url(/jcPhoto/images/Abrams_Wedding-205.png);
-    background-size: 100% 100%;
+    background: url("/images/Abrams_Wedding-205.png") no-repeat;
+    background-size: contain;
 }
 
 header, section {
@@ -701,7 +701,7 @@ html, body {
 /* Home section */
 
 .home {
-    background-image: url(/images/Ascension_Wedding-255.jpg);
+    background-image: url("./images/Ascension_Wedding-255.jpg");
     background-position: center top;
     background-size: cover;
 }
@@ -1399,4 +1399,25 @@ hr.solid {
     display: block;
     margin: auto;
     text-align: center;
+}
+
+/* Header Images */
+
+.weddingHead {
+    background: url("/images/Abrams_Wedding-205.png") center center no-repeat fixed;
+    ;
+    /* background-color: #b9b9b9; 
+    height: 400px;
+    width: 100%; */
+}
+
+/* Header Title */
+
+.headTitle {
+    font-family: 'Raleway', sans-serif;
+    padding: 300px 25px;
+    position: relative;
+    width: 70%;
+    font-size: 70px;
+    color: #fff;
 }
